@@ -6,3 +6,6 @@ source /etc/profile.d/rvm.sh
 rvm requirements
 rvm install 2.2.0
 gem install bundler
+
+cd /root/initial
+bundle install

@@ -3,9 +3,14 @@ MAINTAINER Luis Alexandre Deschamps Brandão
 
 RUN yum install -y libyaml-devel
 
-ADD ./ruby.sh /ruby.sh
-RUN bash ruby.sh
+ADD ./ruby.sh /root/ruby.sh
+ADD initial /root/initial
+RUN bash /root/ruby.sh
 
-EXPOSE 4001
+ADD rewriteID.sh /root/rewriteID.sh
+#RUN bash /root/rewriteID.sh luisos 1001 && \
+#    rm -f /root/rewriteID.sh
+
+EXPOSE 3000
 EXPOSE 22
 CMD ["/usr/sbin/init"]
