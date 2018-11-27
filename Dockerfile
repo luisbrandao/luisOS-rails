@@ -4,7 +4,8 @@ MAINTAINER Luis Alexandre Deschamps Brandão
 RUN yum install -y libyaml-devel mysql-devel
 
 ADD ./ruby.sh /root/ruby.sh
-ADD initial /root/initial
+ADD HandsDeps /root/HandsDeps
+ADD MecanicaDeps /root/MecanicaDeps
 RUN bash /root/ruby.sh
 
 ADD rewriteID.sh /root/rewriteID.sh
