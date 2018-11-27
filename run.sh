@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run --privileged -d --name luisos-rails -p 2222:22 -p 4001:4001 --restart unless-stopped luisos-rails # -v jenkins_data:/var/lib/jenkins 
+docker run --privileged -d --name luisos-rails  -v /home/luis.deschamps.ext/git/luis/Mecanica:/home/luisos/mecanica -v /home/luis.deschamps.ext/git/luis/HandsHomecare:/home/luisos/handsHomecare luisos-rails

@@ -1,7 +1,7 @@
 FROM luisos:latest
 MAINTAINER Luis Alexandre Deschamps Brandão
 
-RUN yum install -y libyaml-devel
+RUN yum install -y libyaml-devel mysql-devel
 
 ADD ./ruby.sh /root/ruby.sh
 ADD initial /root/initial

@@ -7,5 +7,8 @@ rvm requirements
 rvm install 2.2.0
 gem install bundler
 
-cd /root/initial
+cd /root/MecanicaDeps
+bundle install
+
+cd /root/HandsDeps
 bundle install

@@ -1,0 +1,62 @@
+source 'https://rubygems.org'
+
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.2.8'
+
+# Bancos de dados
+gem 'mysql2', '~> 0.5.2'
+gem 'dalli'
+
+gem 'money-rails'
+
+gem 'sass-rails', '~> 5.0.6'
+gem 'coffee-rails', '~> 4.1.0'
+gem 'uglifier', '>= 1.3.0'
+
+gem 'jquery-rails'
+gem 'jquery-cookie-rails'
+gem 'jquery-ui-rails'
+# To mask input in forms
+gem 'maskedinput-rails'
+gem "select2-rails"
+
+#To generate pdf's. Deal with it.
+gem 'prawn'
+gem 'prawn-table'
+
+# To use ActiveModel has_secure_password
+gem 'bcrypt-ruby'
+# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'turbolinks'
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 2.0'
+# bundle exec rake doc:rails generates the API under doc/api.
+gem 'sdoc', '~> 0.4.0', group: :doc
+
+# Twitter's typeahead.js jQuery plugin
+#gem 'twitter-typeahead-rails', :git => "git://github.com/yourabi/twitter-typeahead-rails.git"
+gem 'rails4-autocomplete'
+
+# Provides methods for searches
+gem 'ransack'
+
+# Pagination library
+gem 'will_paginate'
+
+# Autentication
+gem 'devise', '~> 3.4.0'
+
+# Transform data on db in seeds
+gem 'seed_dump'
+
+group :development, :test do
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  # gem 'spring'
+
+  # Better Errors
+  gem 'better_errors'
+  gem 'binding_of_caller'
+
+  # puma web server
+  gem 'puma'
+end
