@@ -89,7 +89,7 @@ GEM
       actionpack (>= 4)
       less (~> 2.6.0)
       sprockets (>= 2)
-    libv8 (3.16.14.19-x86_64-linux)
+    libv8 (3.16.14.19)
     loofah (2.2.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -206,6 +206,7 @@ DEPENDENCIES
   bootstrap-sass-extras
   cocoon
   coffee-rails (~> 4.1.0)
+  execjs
   font-awesome-rails
   jbuilder (~> 2.0)
   jquery-rails

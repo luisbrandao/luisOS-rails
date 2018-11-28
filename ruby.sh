@@ -4,7 +4,7 @@ curl -sSL https://get.rvm.io | bash
 
 source /etc/profile.d/rvm.sh
 rvm requirements
-rvm install 2.2.0
+rvm install 2.5.3
 gem install bundler
 
 cd /root/MecanicaDeps

@@ -1,7 +1,7 @@
 FROM luisos:latest
 MAINTAINER Luis Alexandre Deschamps Brandão
 
-RUN yum install -y libyaml-devel mysql-devel nodejs v8-devel
+RUN yum install -y libyaml-devel mysql-devel nodejs nodejs-devel v8-devel
 ADD ./ruby.sh /root/ruby.sh
 ADD HandsDeps /root/HandsDeps
 ADD MecanicaDeps /root/MecanicaDeps
