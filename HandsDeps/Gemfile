@@ -5,9 +5,10 @@ gem 'rails', '4.2.10'
 
 # Bancos de dados
 gem 'mysql2', '~> 0.4.10'
+gem 'sqlite3'
 gem 'dalli'
 
-gem 'money-rails'
+gem 'money-rails', '~> 1.4.1'
 
 gem 'sass-rails', '~> 5.0.6'
 gem 'coffee-rails', '~> 4.1.0'
@@ -44,7 +45,9 @@ gem 'ransack'
 gem 'will_paginate'
 
 # Autentication
-gem 'devise', '~> 3.4.0'
+gem 'devise', '~> 4.5.0'
+# gem 'devise-token_authenticatable'
+
 
 # Transform data on db in seeds
 gem 'seed_dump'

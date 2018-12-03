@@ -55,8 +55,7 @@ gem 'will_paginate'
 gem 'prawn'
 gem 'prawn-table'
 
-gem 'money-rails'
-
+gem 'money-rails', '~> 1.4.1'
 
 # Eyecandy
 gem 'bootstrap-sass', '~> 3.3.5.1'
