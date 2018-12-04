@@ -3,7 +3,8 @@ MAINTAINER Luis Alexandre Deschamps Brandão
 
 RUN yum install -y patch autoconf automake bison bzip2 gcc-c++ libffi-devel libtool make readline-devel sqlite-devel && \
     yum install -y libyaml-devel mysql-devel nodejs nodejs-devel v8-devel glibc-headers glibc-devel patch && \
-    yum install -y memcached mariadb-server
+    yum install -y memcached mariadb-server && \
+    yum clean all && rm -rf /var/cache/yum
 RUN systemctl enable memcached mariadb
 
 ADD ./ruby.sh /root/ruby.sh
