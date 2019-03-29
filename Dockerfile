@@ -1,4 +1,4 @@
-FROM luisos:latest
+FROM registry.techsytes.com/luisos:latest
 MAINTAINER Luis Alexandre Deschamps Brandão
 
 RUN yum install -y patch autoconf automake bison bzip2 gcc-c++ libffi-devel libtool make readline-devel sqlite-devel && \
